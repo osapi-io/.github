@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/osapi-io/osapi/main/docs/static/img/logo.png" alt="OSAPI" width="120" />
+<img src="https://raw.githubusercontent.com/osapi-io/osapi/main/asset/logo.png" alt="OSAPI" width="120" />
 
 # OSAPI
 
@@ -12,6 +12,10 @@
 [![docker](https://img.shields.io/badge/ghcr.io-osapi-blue?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/osapi-io/osapi/pkgs/container/osapi)
 ![openapi initiative](https://img.shields.io/badge/openapiinitiative-%23000000.svg?style=for-the-badge&logo=openapiinitiative&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+<a href="https://osapi-io.github.io/osapi">Documentation</a> &bull;
+<a href="https://osapi-io.github.io/osapi/category/api">API Reference</a> &bull;
+<a href="https://osapi-io.github.io/osapi/sidebar/development/contributing">Contributing</a>
 
 </div>
 
@@ -39,13 +43,13 @@ load-balance across any, or route by labels.
 
 ### Repositories
 
-| Repo | Description |
-| --- | --- |
-| [`osapi`](https://github.com/osapi-io/osapi) | Core API server, agent, CLI, and embedded UI |
-| [`osapi-orchestrator`](https://github.com/osapi-io/osapi-orchestrator) | Multi-step operation orchestration engine |
-| [`osapi-justfiles`](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
-| [`nats-client`](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
-| [`nats-server`](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
+| Project | Stars | Description |
+|---------|-------|-------------|
+| [**osapi**](https://github.com/osapi-io/osapi) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi?style=social)](https://github.com/osapi-io/osapi) | Core API server, agent, CLI, and embedded UI |
+| [**osapi-orchestrator**](https://github.com/osapi-io/osapi-orchestrator) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=social)](https://github.com/osapi-io/osapi-orchestrator) | Multi-step operation orchestration engine |
+| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=social)](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
+| [**nats-client**](https://github.com/osapi-io/nats-client) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=social)](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
+| [**nats-server**](https://github.com/osapi-io/nats-server) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=social)](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
 
 ### Quick start
 
@@ -62,9 +66,3 @@ osapi client node user list --target _all
 # Open the dashboard
 open http://localhost:8080
 ```
-
-<div align="center">
-
-**[Documentation](https://osapi-io.github.io/osapi)** · **[API Reference](https://osapi-io.github.io/osapi/category/api)** · **[Contributing](https://osapi-io.github.io/osapi/sidebar/development/contributing)**
-
-</div>
