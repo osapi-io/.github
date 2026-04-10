@@ -45,11 +45,11 @@ load-balance across any, or route by labels.
 
 | Project | Stars | Description |
 |---------|-------|-------------|
-| [**osapi**](https://github.com/osapi-io/osapi) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi?style=social)](https://github.com/osapi-io/osapi) | Core API server, agent, CLI, and embedded UI |
-| [**osapi-orchestrator**](https://github.com/osapi-io/osapi-orchestrator) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=social)](https://github.com/osapi-io/osapi-orchestrator) | Multi-step operation orchestration engine |
-| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=social)](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
-| [**nats-client**](https://github.com/osapi-io/nats-client) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=social)](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
-| [**nats-server**](https://github.com/osapi-io/nats-server) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=social)](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
+| [**osapi**](https://github.com/osapi-io/osapi) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi?style=for-the-badge)](https://github.com/osapi-io/osapi) | Core API server, agent, CLI, and embedded UI |
+| [**osapi-orchestrator**](https://github.com/osapi-io/osapi-orchestrator) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=for-the-badge)](https://github.com/osapi-io/osapi-orchestrator) | Multi-step operation orchestration engine |
+| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
+| [**nats-client**](https://github.com/osapi-io/nats-client) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=for-the-badge)](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
+| [**nats-server**](https://github.com/osapi-io/nats-server) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=for-the-badge)](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
 
 ### Quick start
 
