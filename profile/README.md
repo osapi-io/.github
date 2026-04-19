@@ -50,6 +50,7 @@ load-balance across any, or route by labels.
 | [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
 | [**nats-client**](https://github.com/osapi-io/nats-client) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=for-the-badge)](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
 | [**nats-server**](https://github.com/osapi-io/nats-server) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=for-the-badge)](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
+| [**gohai**](https://github.com/osapi-io/gohai) | [![Stars](https://img.shields.io/github/stars/osapi-io/gohai?style=for-the-badge)](https://github.com/osapi-io/gohai) | A Go-based system fact collector inspired by Chef Ohai |
 
 ### Quick start
 
