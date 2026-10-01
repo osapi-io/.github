@@ -10,7 +10,6 @@
 
 <p align="center">
   <a href="https://osapi-io.github.io/osapi"><img alt="documentation" src="https://img.shields.io/badge/docs-osapi--io.github.io-blue?style=for-the-badge"></a>
-  <a href="https://github.com/osapi-io/osapi/releases/latest"><img alt="release" src="https://img.shields.io/github/release/osapi-io/osapi.svg?style=for-the-badge"></a>
   <a href="https://github.com/osapi-io/osapi/pkgs/container/osapi"><img alt="ghcr.io" src="https://img.shields.io/badge/ghcr.io-osapi-blue?style=for-the-badge&logo=docker&logoColor=white"></a>
   <img alt="go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
   <img alt="linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
