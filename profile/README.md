@@ -14,7 +14,7 @@
   <a href="https://github.com/osapi-io/osapi/pkgs/container/osapi"><img alt="ghcr.io" src="https://img.shields.io/badge/ghcr.io-osapi-blue?style=for-the-badge&logo=docker&logoColor=white"></a>
   <img alt="go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
   <img alt="linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
-  <a href="https://github.com/osapi-io/osapi/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge"></a>
+  <a href="https://github.com/osapi-io/.github/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -81,4 +81,6 @@ open http://localhost:8080
 [Documentation](https://osapi-io.github.io/osapi) |
 [API reference](https://osapi-io.github.io/osapi/category/api) |
 [Contributing](https://osapi-io.github.io/osapi/sidebar/development/contributing) |
-[Security](https://github.com/osapi-io/.github/blob/main/SECURITY.md)
+[Security](https://github.com/osapi-io/.github/blob/main/SECURITY.md) |
+[Code of conduct](https://github.com/osapi-io/.github/blob/main/CODE_OF_CONDUCT.md) |
+[AI policy](https://github.com/osapi-io/.github/blob/main/AI_POLICY.md)
