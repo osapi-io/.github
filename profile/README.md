@@ -1,69 +1,84 @@
-<div align="center">
+<p align="center">
+  <picture>
+    <source srcset="https://raw.githubusercontent.com/osapi-io/.github/main/profile/asset/logo-dark.svg" media="(prefers-color-scheme: dark)">
+    <source srcset="https://raw.githubusercontent.com/osapi-io/.github/main/profile/asset/logo-light.svg" media="(prefers-color-scheme: light)">
+    <img src="https://raw.githubusercontent.com/osapi-io/.github/main/profile/asset/logo-dark.svg" alt="osapi-io" width="360">
+  </picture>
+</p>
 
-<img src="https://raw.githubusercontent.com/osapi-io/osapi/main/asset/logo.png" alt="OSAPI" width="120" />
+<p align="center">A Linux system management API with async job processing over NATS JetStream.</p>
 
-# OSAPI
+<p align="center">
+  <a href="https://osapi-io.github.io/osapi"><img alt="documentation" src="https://img.shields.io/badge/docs-osapi--io.github.io-blue?style=for-the-badge"></a>
+  <a href="https://github.com/osapi-io/osapi/releases/latest"><img alt="release" src="https://img.shields.io/github/release/osapi-io/osapi.svg?style=for-the-badge"></a>
+  <a href="https://github.com/osapi-io/osapi/pkgs/container/osapi"><img alt="ghcr.io" src="https://img.shields.io/badge/ghcr.io-osapi-blue?style=for-the-badge&logo=docker&logoColor=white"></a>
+  <img alt="go" src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
+  <img alt="linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+  <a href="https://github.com/osapi-io/osapi/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge"></a>
+</p>
 
-**A CRUD API for managing Linux systems**
+<p align="center">
+<b>Work reaches a host by being queued, not by being called.</b>
+</p>
 
-[![release](https://img.shields.io/github/release/osapi-io/osapi.svg?style=for-the-badge)](https://github.com/osapi-io/osapi/releases/latest)
-[![build](https://img.shields.io/github/actions/workflow/status/osapi-io/osapi/go.yml?style=for-the-badge)](https://github.com/osapi-io/osapi/actions/workflows/go.yml)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge)](https://github.com/osapi-io/osapi/blob/main/LICENSE)
-[![docker](https://img.shields.io/badge/ghcr.io-osapi-blue?style=for-the-badge&logo=docker&logoColor=white)](https://github.com/osapi-io/osapi/pkgs/container/osapi)
-![openapi initiative](https://img.shields.io/badge/openapiinitiative-%23000000.svg?style=for-the-badge&logo=openapiinitiative&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+## What this is
 
-<a href="https://osapi-io.github.io/osapi">Documentation</a> &bull;
-<a href="https://osapi-io.github.io/osapi/category/api">API Reference</a> &bull;
-<a href="https://osapi-io.github.io/osapi/sidebar/development/contributing">Contributing</a>
-
-</div>
-
----
-
-OSAPI turns Linux servers into managed appliances. Install a single binary, point
-it at a config file, and get a REST API, CLI, and web dashboard for managing
-system configuration across your fleet.
-
-### What it does
-
-> Hostname, DNS, disk, memory, users, packages, services, cron, sysctl, NTP,
-> certificates, Docker containers, file deploys, process management, network
-> interfaces, routes — all through one consistent API with async job processing.
-
-### How it works
+OSAPI makes a Linux host behave like an appliance. One binary and a config file
+give you a REST API, a CLI, a Go SDK and an embedded dashboard over hostname,
+DNS, disk, memory, load, packages, services, users, sysctl, cron, certificates,
+containers, files and command execution, across a fleet rather than one box.
 
 ```
-CLI / SDK / UI  →  Controller (REST API)  →  NATS JetStream  →  Agents
+CLI / SDK / UI  ->  Controller (REST API)  ->  NATS JetStream  ->  Agents
 ```
 
-The controller never touches the OS directly. It creates jobs routed through NATS
-to agents running on each managed host. Target a specific host, broadcast to all,
-load-balance across any, or route by labels.
+The controller never touches the operating system. It writes a job and waits.
+An agent on the managed host picks the job up and a provider does the work.
+Delivery is at-least-once, so every provider has to be safe to run twice, and
+that constraint is what the rest of the design is built around.
 
-### Repositories
+Target one host by name, broadcast to the whole fleet, load-balance across any
+free agent, or route by label.
 
-| Project | Stars | Description |
-|---------|-------|-------------|
-| [**osapi**](https://github.com/osapi-io/osapi) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi?style=for-the-badge)](https://github.com/osapi-io/osapi) | Core API server, agent, CLI, and embedded UI |
-| [**osapi-orchestrator**](https://github.com/osapi-io/osapi-orchestrator) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=for-the-badge)](https://github.com/osapi-io/osapi-orchestrator) | Multi-step operation orchestration engine |
-| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![Stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles) | Shared just recipes for CI and development |
-| [**nats-client**](https://github.com/osapi-io/nats-client) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=for-the-badge)](https://github.com/osapi-io/nats-client) | NATS JetStream client library |
-| [**nats-server**](https://github.com/osapi-io/nats-server) | [![Stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=for-the-badge)](https://github.com/osapi-io/nats-server) | Embedded NATS server wrapper |
-| [**gohai**](https://github.com/osapi-io/gohai) | [![Stars](https://img.shields.io/github/stars/osapi-io/gohai?style=for-the-badge)](https://github.com/osapi-io/gohai) | A Go-based system fact collector inspired by Chef Ohai |
+## Repositories
 
-### Quick start
+| Repository | What it is |
+|---|---|
+| [osapi](https://github.com/osapi-io/osapi) | The controller, the agent, the CLI, the SDK and the embedded dashboard |
+| [osapi-orchestrator](https://github.com/osapi-io/osapi-orchestrator) | Runs multi-step operations across OSAPI-managed hosts |
+| [gohai](https://github.com/osapi-io/gohai) | Collects system facts, in the spirit of Chef Ohai |
+| [nats-client](https://github.com/osapi-io/nats-client) | Connects to NATS and JetStream |
+| [nats-server](https://github.com/osapi-io/nats-server) | Runs a NATS server inside a Go process |
+| [osapi-justfiles](https://github.com/osapi-io/osapi-justfiles) | The `just` recipes every repository here imports |
+| [specs](https://github.com/osapi-io/specs) | The design docs, written before the code |
+
+Start with [osapi](https://github.com/osapi-io/osapi). Everything else is either
+something it imports or something that reads it.
+
+## How the work is done
+
+Design first. A change starts as a page in [specs](https://github.com/osapi-io/specs),
+gets built, and then the page is corrected wherever building proved it wrong.
+It is the same page all three times, so nothing is converted from one form into
+another, and the design and the documentation cannot drift apart.
+
+## Try it
 
 ```bash
-# Install and run all three components
+# run the controller, the agent and NATS together
 osapi start
 
-# Query a host
+# ask one host its hostname
 osapi client node hostname --target web-01
 
-# Broadcast to the fleet
+# ask every host for its users
 osapi client node user list --target _all
 
-# Open the dashboard
+# open the dashboard
 open http://localhost:8080
 ```
+
+[Documentation](https://osapi-io.github.io/osapi) |
+[API reference](https://osapi-io.github.io/osapi/category/api) |
+[Contributing](https://osapi-io.github.io/osapi/sidebar/development/contributing) |
+[Security](https://github.com/osapi-io/.github/blob/main/SECURITY.md)
