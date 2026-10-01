@@ -42,15 +42,15 @@ free agent, or route by label.
 
 ## Repositories
 
-| Repository | What it is |
-|---|---|
-| [osapi](https://github.com/osapi-io/osapi) | The controller, the agent, the CLI, the SDK and the embedded dashboard |
-| [osapi-orchestrator](https://github.com/osapi-io/osapi-orchestrator) | Runs multi-step operations across OSAPI-managed hosts |
-| [gohai](https://github.com/osapi-io/gohai) | Collects system facts, in the spirit of Chef Ohai |
-| [nats-client](https://github.com/osapi-io/nats-client) | Connects to NATS and JetStream |
-| [nats-server](https://github.com/osapi-io/nats-server) | Runs a NATS server inside a Go process |
-| [osapi-justfiles](https://github.com/osapi-io/osapi-justfiles) | The `just` recipes every repository here imports |
-| [specs](https://github.com/osapi-io/specs) | The design docs, written before the code |
+| Repository | What it is | Release | Stars |
+|---|---|---|---|
+| [osapi](https://github.com/osapi-io/osapi) | The controller, the agent, the CLI, the SDK and the embedded dashboard | [![release](https://img.shields.io/badge/unreleased-6e7681?style=flat-square)](https://github.com/osapi-io/osapi/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/osapi/stargazers) |
+| [osapi-orchestrator](https://github.com/osapi-io/osapi-orchestrator) | Runs multi-step operations across OSAPI-managed hosts | [![release](https://img.shields.io/badge/unreleased-6e7681?style=flat-square)](https://github.com/osapi-io/osapi-orchestrator/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/osapi-orchestrator/stargazers) |
+| [gohai](https://github.com/osapi-io/gohai) | Collects system facts, in the spirit of Chef Ohai | [![release](https://img.shields.io/github/v/tag/osapi-io/gohai?style=flat-square&label=&labelColor=1c2128&color=2f81f7)](https://github.com/osapi-io/gohai/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/gohai?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/gohai/stargazers) |
+| [nats-client](https://github.com/osapi-io/nats-client) | Connects to NATS and JetStream | [![release](https://img.shields.io/github/v/tag/osapi-io/nats-client?style=flat-square&label=&labelColor=1c2128&color=2f81f7)](https://github.com/osapi-io/nats-client/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/nats-client/stargazers) |
+| [nats-server](https://github.com/osapi-io/nats-server) | Runs a NATS server inside a Go process | [![release](https://img.shields.io/github/v/tag/osapi-io/nats-server?style=flat-square&label=&labelColor=1c2128&color=2f81f7)](https://github.com/osapi-io/nats-server/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/nats-server/stargazers) |
+| [osapi-justfiles](https://github.com/osapi-io/osapi-justfiles) | The `just` recipes every repository here imports | [![release](https://img.shields.io/badge/tracks%20main-6e7681?style=flat-square)](https://github.com/osapi-io/osapi-justfiles/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/osapi-justfiles/stargazers) |
+| [specs](https://github.com/osapi-io/specs) | The design docs, written before the code | [![release](https://img.shields.io/badge/living-484f58?style=flat-square)](https://github.com/osapi-io/specs/releases) | [![stars](https://img.shields.io/github/stars/osapi-io/specs?style=flat-square&labelColor=1c2128)](https://github.com/osapi-io/specs/stargazers) |
 
 Start with [osapi](https://github.com/osapi-io/osapi). Everything else is either
 something it imports or something that reads it.
