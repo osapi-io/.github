@@ -39,10 +39,10 @@ That distinction matters for what is actually in use today:
 
 | File | Served to | Also carried by |
 | --- | --- | --- |
-| [SECURITY.md](SECURITY.md) | all seven repositories | none of them |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | nothing | all seven |
-| [AI_POLICY.md](AI_POLICY.md) | nothing | all seven |
-| [LICENSE](LICENSE) | nothing, GitHub has no license fallback | all seven |
+| [SECURITY.md](SECURITY.md) | all eight repositories | none of them |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | nothing | all eight |
+| [AI_POLICY.md](AI_POLICY.md) | nothing | all eight |
+| [LICENSE](LICENSE) | nothing, GitHub has no license fallback | all eight |
 
 So `SECURITY.md` is the only one doing the fallback job. The other three exist
 as the organization's canonical copy, which is what the profile page links
