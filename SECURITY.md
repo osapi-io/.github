@@ -15,8 +15,11 @@ Report the vulnerability privately. Do not open an issue.
    https://github.com/osapi-io/osapi/security/advisories/new
 
 1. Write what you did, what occurred, and what you expected.
-1. If you have a proof of concept, include it. Do not run a proof of concept
-   against a host that you do not own.
+1. If you have a proof of concept, include it.
+
+   **Warning:** Do not run a proof of concept against a host that you do not
+   own. It can damage the host or the data on it, and the owner of the host did
+   not give you permission.
 
 The maintainers acknowledge a report in one week or less. These repositories
 have few maintainers, so a fix can take more time than the acknowledgement.
