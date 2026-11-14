@@ -6,9 +6,11 @@ This file covers every repository in [osapi-io](https://github.com/osapi-io).
 
 Report the vulnerability privately. Do not open an issue.
 
-1. Open the Security tab of the repository that has the bug.
-1. Select **Report a vulnerability**. GitHub opens a private draft advisory.
-   Only the maintainers can see the advisory.
+1. Open the Security tab of the repository that has the vulnerability.
+1. Select **Report a vulnerability**.
+
+   Note: GitHub opens a private draft advisory. Only the maintainers can see
+   the advisory.
 
    https://github.com/osapi-io/osapi/security/advisories/new
 
@@ -16,13 +18,14 @@ Report the vulnerability privately. Do not open an issue.
 1. If you have a proof of concept, include it. Do not run a proof of concept
    against a host that you do not own.
 
-The maintainers acknowledge a report in one week or less. These projects have
-few maintainers, so a fix can take more time than the acknowledgement. The
-maintainers tell you the status of the fix. They do not leave a report
+The maintainers acknowledge a report in one week or less. These repositories
+have few maintainers, so a fix can take more time than the acknowledgement.
+The maintainers tell you the status of the fix. They do not leave a report
 without an answer.
 
-When the fix is released, the maintainers publish the draft advisory with a
-CVE. The advisory gives you credit, unless you ask the maintainers not to.
+When the maintainers release the fix, they publish the draft advisory with a
+CVE. The advisory gives you credit, unless you tell the maintainers that you do
+not want credit.
 
 ## What is supported
 
@@ -41,6 +44,6 @@ These are out of scope:
 - A finding from an automated scanner that has no reachable path through the
   code.
 
-OSAPI does privileged operations on the machines that it manages. This is
-intentional. When an agent changes the hostname of its host, the product
-works correctly. That is not a vulnerability.
+OSAPI does privileged operations on the hosts that it manages. This is
+intentional. When an agent changes the hostname of its host, OSAPI works
+correctly. That is not a vulnerability.
