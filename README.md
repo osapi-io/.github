@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<p align="center">The organization profile, and the files every osapi-io repository falls back to.</p>
+<p align="center">The organization profile, and the default files for every osapi-io repository.</p>
 
 <p align="center">
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=for-the-badge"></a>
@@ -16,51 +16,54 @@
 </p>
 
 <p align="center">
-<b>Two jobs: the page people land on, and the files repositories inherit.</b>
+<b>This repository holds the organization page and the default files for the other repositories.</b>
 </p>
 
 <p align="center">
-Nothing here is built or imported. GitHub reads this repository by name and by
-path, so where a file sits decides what it does.
+Nothing here is built or imported. GitHub finds this repository by its name and
+finds each file by its path. The path of a file decides what GitHub does with it.
 </p>
 
 ## Usage
 
-`profile/README.md` is rendered at [github.com/osapi-io](https://github.com/osapi-io).
-No other file in this repository appears there, and the file has no effect
-anywhere else.
+GitHub shows `profile/README.md` at [github.com/osapi-io](https://github.com/osapi-io).
+No other file in this repository shows there. The file has no effect in a
+different location.
 
-Everything at the root is a community health file. GitHub serves one to any
-repository in the organization that does not have its own copy. It never
-replaces a copy a repository already has, so adding a file here changes nothing
-for a repository that carries its own.
+Each file at the root is a community health file. GitHub serves the file to each
+repository in the organization that does not have its own copy. GitHub never
+replaces the copy that a repository has. Thus a new file here changes nothing
+for a repository that has its own copy.
 
-That distinction matters for what is actually in use today:
+The table shows which files GitHub serves now:
 
-| File | Served to | Also carried by |
+| File | Served to | Has its own copy |
 | --- | --- | --- |
 | [SECURITY.md](SECURITY.md) | all eight repositories | none of them |
 | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | nothing | all eight |
 | [AI_POLICY.md](AI_POLICY.md) | nothing | all eight |
-| [LICENSE](LICENSE) | nothing, GitHub has no license fallback | all eight |
+| [LICENSE](LICENSE) | nothing, GitHub has no default license file | all eight |
 
-So `SECURITY.md` is the only one doing the fallback job. The other three exist
-as the organization's canonical copy, which is what the profile page links
-rather than picking one repository's copy and implying it speaks for the rest.
+Thus GitHub serves only `SECURITY.md` as a default file. The other three files
+are the canonical copy for the organization. The profile page links to these
+copies. It does not link to the copy in one repository, because that copy
+does not speak for the other repositories.
 
-`AI_POLICY.md` is not a file GitHub recognizes. It is served to nobody and
-inherited by nobody. It is here to be linked.
+GitHub does not recognize `AI_POLICY.md`. GitHub serves it to no repository.
+It is here only as the target of links.
 
-## Changing the profile page
+## Change the profile page
 
-Edit `profile/README.md`. It takes effect on merge, with no build step and no
-deploy. The wordmark beside it is `profile/asset/logo-dark.svg` and its light
-counterpart, drawn from the five colours in osapi's logo like every sister
-repository's.
+1. Edit `profile/README.md`.
+1. Merge the change. The change shows on the profile page after the merge.
+   There is no build and no deployment.
 
-Every link in that file is absolute. The page is served from the organization
-URL rather than from this repository, so a relative link there is not worth
-finding out the hard way.
+The wordmark is `profile/asset/logo-dark.svg` and `profile/asset/logo-light.svg`.
+Both use the five colours of the osapi logo, as the other repositories do.
+
+Use only absolute links in `profile/README.md`. GitHub shows the page at the
+organization URL, not in this repository. Thus a relative link in the page
+does not go to the correct location.
 
 ## License
 
