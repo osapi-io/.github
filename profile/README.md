@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<p align="center">A Linux system management API with async job processing over NATS JetStream.</p>
+<p align="center">An API that manages Linux hosts and runs each job asynchronously over NATS JetStream.</p>
 
 <p align="center">
   <a href="https://osapi-io.github.io/osapi"><img alt="documentation" src="https://img.shields.io/badge/docs-osapi--io.github.io-blue?style=for-the-badge"></a>
@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-<b>The controller puts work on a queue. It does not call the host.</b>
+<b>The controller puts each job on a queue. It does not call the host.</b>
 </p>
 
 ## What this is
@@ -54,10 +54,10 @@ A job can go to:
 |---------|---------|-------|-------------|
 | [**osapi**](https://github.com/osapi-io/osapi) | [![release](https://img.shields.io/github/release/osapi-io/osapi.svg?style=for-the-badge)](https://github.com/osapi-io/osapi/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi?style=for-the-badge)](https://github.com/osapi-io/osapi/stargazers) | The controller, the agent, the CLI, the SDK and the embedded dashboard |
 | [**osapi-orchestrator**](https://github.com/osapi-io/osapi-orchestrator) | [![release](https://img.shields.io/github/release/osapi-io/osapi-orchestrator.svg?style=for-the-badge)](https://github.com/osapi-io/osapi-orchestrator/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-orchestrator?style=for-the-badge)](https://github.com/osapi-io/osapi-orchestrator/stargazers) | Runs multi-step operations across OSAPI-managed hosts |
-| [**gohai**](https://github.com/osapi-io/gohai) | [![release](https://img.shields.io/github/release/osapi-io/gohai.svg?style=for-the-badge)](https://github.com/osapi-io/gohai/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/gohai?style=for-the-badge)](https://github.com/osapi-io/gohai/stargazers) | Collects system facts, in the spirit of Chef Ohai |
+| [**gohai**](https://github.com/osapi-io/gohai) | [![release](https://img.shields.io/github/release/osapi-io/gohai.svg?style=for-the-badge)](https://github.com/osapi-io/gohai/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/gohai?style=for-the-badge)](https://github.com/osapi-io/gohai/stargazers) | Collects system facts, like Chef Ohai |
 | [**nats-client**](https://github.com/osapi-io/nats-client) | [![release](https://img.shields.io/github/release/osapi-io/nats-client.svg?style=for-the-badge)](https://github.com/osapi-io/nats-client/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/nats-client?style=for-the-badge)](https://github.com/osapi-io/nats-client/stargazers) | Connects to NATS and JetStream |
 | [**nats-server**](https://github.com/osapi-io/nats-server) | [![release](https://img.shields.io/github/release/osapi-io/nats-server.svg?style=for-the-badge)](https://github.com/osapi-io/nats-server/releases/latest) | [![stars](https://img.shields.io/github/stars/osapi-io/nats-server?style=for-the-badge)](https://github.com/osapi-io/nats-server/stargazers) | Runs a NATS server inside a Go process |
-| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![release](https://img.shields.io/badge/release-main-lightgrey?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles/stargazers) | The `just` recipes every repository here imports |
+| [**osapi-justfiles**](https://github.com/osapi-io/osapi-justfiles) | [![release](https://img.shields.io/badge/release-main-lightgrey?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-justfiles?style=for-the-badge)](https://github.com/osapi-io/osapi-justfiles/stargazers) | The `just` recipes that every repository here imports |
 | [**specs**](https://github.com/osapi-io/specs) | [![release](https://img.shields.io/badge/release-living-lightgrey?style=for-the-badge)](https://github.com/osapi-io/specs/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/specs?style=for-the-badge)](https://github.com/osapi-io/specs/stargazers) | The design docs, written before the code |
 | [**osapi-lab**](https://github.com/osapi-io/osapi-lab) | [![release](https://img.shields.io/badge/release-main-lightgrey?style=for-the-badge)](https://github.com/osapi-io/osapi-lab/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-lab?style=for-the-badge)](https://github.com/osapi-io/osapi-lab/stargazers) | Tart VMs on a Mac that run an osapi branch across real distributions |
 
