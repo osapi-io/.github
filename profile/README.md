@@ -18,27 +18,35 @@
 </p>
 
 <p align="center">
-<b>Work reaches a host by being queued, not by being called.</b>
+<b>The controller puts work on a queue. It does not call the host.</b>
 </p>
 
 ## What this is
 
-OSAPI makes a Linux host behave like an appliance. One binary and a config file
-give you a REST API, a CLI, a Go SDK and an embedded dashboard over hostname,
-DNS, disk, memory, load, packages, services, users, sysctl, cron, certificates,
-containers, files and command execution, across a fleet rather than one box.
+OSAPI makes a Linux host operate like an appliance. One binary and one
+configuration file give you a REST API, a CLI, a Go SDK and an embedded
+dashboard. They manage a fleet of hosts, not only one host. They control these
+parts of each host:
+
+- hostname, DNS, disk, memory and load
+- packages, services, users, sysctl and cron
+- certificates, containers, files and command execution
 
 ```
 CLI / SDK / UI  ->  Controller (REST API)  ->  NATS JetStream  ->  Agents
 ```
 
-The controller never touches the operating system. It writes a job and waits.
-An agent on the managed host picks the job up and a provider does the work.
-Delivery is at-least-once, so every provider has to be safe to run twice, and
-that constraint is what the rest of the design is built around.
+The controller never changes the operating system. It writes a job and waits.
+An agent on the managed host receives the job. Then a provider on that host
+does the work. Delivery is at-least-once, so each provider must be safe to run
+two times. The remainder of the design follows from this constraint.
 
-Target one host by name, broadcast to the whole fleet, load-balance across any
-free agent, or route by label.
+A job can go to:
+
+- one host, by its name
+- all hosts in the fleet, as a broadcast
+- any one free agent, for load balance
+- the hosts that have a given label
 
 ## Repositories
 
@@ -53,15 +61,15 @@ free agent, or route by label.
 | [**specs**](https://github.com/osapi-io/specs) | [![release](https://img.shields.io/badge/release-living-lightgrey?style=for-the-badge)](https://github.com/osapi-io/specs/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/specs?style=for-the-badge)](https://github.com/osapi-io/specs/stargazers) | The design docs, written before the code |
 | [**osapi-lab**](https://github.com/osapi-io/osapi-lab) | [![release](https://img.shields.io/badge/release-main-lightgrey?style=for-the-badge)](https://github.com/osapi-io/osapi-lab/commits/main) | [![stars](https://img.shields.io/github/stars/osapi-io/osapi-lab?style=for-the-badge)](https://github.com/osapi-io/osapi-lab/stargazers) | Tart VMs on a Mac that run an osapi branch across real distributions |
 
-Start with [osapi](https://github.com/osapi-io/osapi). Everything else is either
-something it imports or something that reads it.
+Start with [osapi](https://github.com/osapi-io/osapi). Each other repository
+is a library that osapi imports, or a tool that reads osapi.
 
-## How the work is done
+## How we do the work
 
-Design first. A change starts as a page in [specs](https://github.com/osapi-io/specs),
-gets built, and then the page is corrected wherever building proved it wrong.
-It is the same page all three times, so nothing is converted from one form into
-another, and the design and the documentation cannot drift apart.
+Design comes first. A change starts as a page in [specs](https://github.com/osapi-io/specs).
+Then we build the change. Then we correct the page where the build showed that
+the design was wrong. It is one page in all three steps. We do not convert it
+from one form into another. Thus the design and the documentation always agree.
 
 ## Try it
 
