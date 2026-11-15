@@ -25,7 +25,7 @@ repository by its name and finds each file by its path. The path of a file
 decides what GitHub does with it.
 </p>
 
-## Usage
+## 🚀 Usage
 
 GitHub shows `profile/README.md` at [github.com/osapi-io](https://github.com/osapi-io).
 No other file in this repository shows there. The file has no effect in a
@@ -53,7 +53,7 @@ does not apply to the other repositories.
 GitHub does not recognize `AI_POLICY.md`. GitHub serves it to no repository.
 It is here only as the target of links.
 
-## Change the profile page
+## ✏️ Change the profile page
 
 1. Edit `profile/README.md`.
 1. Merge the change.
@@ -68,6 +68,6 @@ Use only absolute links in `profile/README.md`. GitHub shows the page at the
 organization URL, not in this repository. Thus a relative link in the page
 does not go to the correct location.
 
-## License
+## 📄 License
 
 The [MIT](LICENSE) License.
