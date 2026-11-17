@@ -6,7 +6,7 @@
   </picture>
 </p>
 
-<p align="center">An API that manages Linux hosts and runs each job asynchronously over NATS JetStream.</p>
+<p align="center">Typed, repeatable operations for Linux hosts.</p>
 
 <p align="center">
   <a href="https://osapi-io.github.io/osapi"><img alt="documentation" src="https://img.shields.io/badge/docs-osapi--io.github.io-blue?style=for-the-badge"></a>
